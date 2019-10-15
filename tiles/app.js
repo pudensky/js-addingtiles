@@ -39,12 +39,12 @@ const data = [
 
 const container = document.getElementById("content");
 
-data.forEach((result, idx) => {
-  //  card element creation
+data.forEach((result, id) => {
+  // here card element is created
   const card = document.createElement("div");
   card.classList = "card-body";
 
-  //  card content construction
+  // here card content is constructed 
   const content = `
     <div class="card" style="background-color: ${result.color}">
     <div class="card-header">
@@ -67,7 +67,7 @@ data.forEach((result, idx) => {
   </div>
   `;
 
-  // Append newyly created card element to the container
+
   container.innerHTML += content;
 });
 
